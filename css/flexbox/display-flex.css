@@ -1,0 +1,10 @@
+.displayFlex{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.displayFlex .box + .box{
+  margin-inline-start: 1rem;
+}
+

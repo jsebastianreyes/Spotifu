@@ -1,0 +1,24 @@
+.flex{
+  display: flex;
+  background: lightblue;
+}
+
+.flex > img{
+  inline-size: 400px;
+  /* valor inicial del flex-shrink  1*/
+  flex-shrink: 1;
+  /*se cambia por 0*/
+}
+
+.flex > div{
+ border: 1px solid red;
+ /* flex-grow: 1; */
+ /* flex-basis: 100%; */
+
+flex:1;
+ /*
+ flex-basis:0%;
+ flex-grow:1;
+ flex-shrink:1;
+ */
+}
