@@ -1,0 +1,42 @@
+.menuItem{
+
+
+
+}
+
+.menuItem a{
+    font: var(--fontButton);
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+    display: flex;
+
+    block-size: 2.5rem;
+    gap: .5rem;
+    align-items: center;
+
+  }
+
+.menuItem [class^="icon-"]{
+   font-size: 1.5rem;
+}
+
+
+.menuItem a:hover{
+  text-decoration: none;
+}
+
+.menuItem.is-active a{
+  color: var(--white);
+  box-shadow: inset 4px 0 0 var(--primary);
+
+}
+
+.menuItem.is-active i.icon-home::before{
+  content: "\e90a";
+}
+.menuItem.is-active i.icon-search::before{
+  content: "\e914";
+}
+/* .menuItem.is-active i.icon-creditCard::before{
+  content: "\e90a";
+} */

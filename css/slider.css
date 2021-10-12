@@ -1,0 +1,52 @@
+.slider{
+  /* inline-size: 100%; */
+  block-size: .25rem;
+  background: rgba(255, 255, 255, .2);
+  /* background: yellow; */
+  border-radius:  .25rem;
+}
+.slider:hover .slider-progress{
+  background: var(--primary);
+}
+.slider:hover .slider-button{
+  display: block;
+}
+.slider-progress{
+  block-size: inherit;
+  border-radius:inherit;
+  background:var(--white);
+  inline-size: 20%;
+  position: relative;
+}
+
+
+.slider-button{
+  aspect-ratio: 1/1;
+  block-size: 200%;
+  position: absolute;
+  padding: 0;
+  border: 0px;
+  background: var(--white);
+  border-radius: 50%;
+  /*otra manera de centrar con posicionamiento*/
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+ /* mover en eje x y y (el 50% no es el valor del  padre) */
+  display: none;
+}
+
+/* Como yo lo resolvi */
+
+/* .slider-button{
+  inline-size: .5rem;
+  block-size: .5rem;
+  position: absolute;
+  padding: 0;
+  border: 0px;
+  background: var(--white);
+  border-radius: 50%;
+  inset-block-start: calc(50% - .25rem);
+} */
+
+
