@@ -1,0 +1,57 @@
+.playlistB{
+  inline-size: 17.5rem;
+  /* block-size: 5.428em; */
+  background: rgba(255, 255, 255, .1);
+  display: flex;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+  box-sizing: border-box;
+  transition: .3s background;
+  flex-shrink: 0;
+
+}
+
+
+
+.playlistB:hover, .playlistB:focus-within{
+  background: rgba(255, 255, 255, .2);
+  cursor: pointer;
+}
+
+
+
+.playlistB:hover .playlistB-information .buttonIcon, .playlistB:focus-within .playlistB-information .buttonIcon{
+opacity: 1;
+}
+
+
+.playlistB-information{
+ padding: 1rem;
+ display: flex;
+ align-items: center;
+ gap: .5rem;
+}
+
+.playlistB-information .buttonIcon{
+  opacity: 0;
+  transition: .3s opacity;
+}
+
+.playlistB-information .playlistB-title{
+  inline-size: 7.8rem;
+}
+
+.playlistB-title{
+  font: var(--baseFontBold);
+  color: var(--white);
+  margin: 0;
+}
+
+.playlistB-cover img{
+  vertical-align: middle;
+ block-size: 4.75rem;
+ inline-size: 4.75rem;
+ object-fit: cover;
+ object-position: center;
+}

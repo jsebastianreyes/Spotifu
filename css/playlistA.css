@@ -5,6 +5,7 @@
   border-radius: .25rem;
   box-sizing: border-box;
   transition: .3s background;
+  flex-shrink: 0;
 
 }
 
@@ -29,6 +30,11 @@
 
 .playlistA-cover img{
   vertical-align: middle;
+  inline-size: 100%;
+  block-size: 9.3rem;
+  /* aspect-ratio: 0.5; */
+  object-fit: cover;
+  object-position: center;
 
 
 }
