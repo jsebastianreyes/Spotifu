@@ -1,0 +1,28 @@
+::-webkit-scrollbar{
+  background: red;
+  inline-size: .35rem;
+  block-size: .35rem;
+
+}
+
+/* ::-webkit-scrollbar-button{
+  background: chocolate;
+} */
+
+::-webkit-scrollbar-track{
+  background: var(--gray50);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--gray60);
+}
+
+
+/* ::-webkit-scrollbar-thumb:horizontal{
+  background: darkblue;
+  border-radius: 8rem;
+}
+::-webkit-scrollbar-thumb:vertical{
+  background:darkmagenta;
+  border-radius: 8rem;
+} */
