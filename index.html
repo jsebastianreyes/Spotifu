@@ -31,8 +31,10 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 </head>
+
 <body class="body">
-  <div class="layout">
+
+    <div class="layout">
     <div class="layout-block">
       <div class="layout-sidebar">
         <div class="sidebar">
@@ -51,7 +53,7 @@
                 </a>
               </li>
               <li class="menuItem">
-                <a href="/" class="link" aria-current="page">
+                <a href="./search.html" class="link" aria-current="page">
                   <i class="icon-search" aria-hidden="true"></i>
                   <span>Buscar</span>
                 </a>
@@ -68,28 +70,51 @@
           <nav class="list" aria-labelledby="library-navigation">
             <h2 class="list-title" id="library-navigation">Tu Biblioteca</h2>
             <ul class="list-content">
-              <li class="list-item"><a href="#" class="link">Creada para ti</a></li>
-              <li class="list-item"><a href="#" class="link">Escuchado Recientemente</a></li>
-              <li class="list-item"><a href="#" class="link">Tus Me Gusta</a></li>
+              <li class="list-item">
+                <span class="ellipsis">
+                  <a href="#" class="link">Creada para ti</a>
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="ellipsis">
+                  <a href="#" class="link">Escuchado Recientemente</a>
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="ellipsis">
+                 <a href="#" class="link">Tus Me Gusta</a>
+                </span>
+              </li>
             </ul>
           </nav>
           <nav class="list" aria-labelledby="playlist-navigation">
             <h2 class="list-title" id="playlist-navigation">Playlists</h2>
             <ul class="list-content">
-              <li class="list-item"><a href="#" class="link">Seven Deadly Sins Openings</a></li>
               <li class="list-item">
                 <span class="ellipsis">
-                  <a href="#" class="link">Dragon Ball Z Latino</a>
+                  <a href="./mansion-reggeaton.html" class="link">Mansión Reggaetón</a>
+                </span>
               </li>
-              </span>
-              <li class="list-item"><a href="#" class="link">50 Himnos Rock en Español</a></li>
-              <li class="list-item"><a href="#" class="link">Música para Programar</a></li>
-              <li class="list-item"><a href="#" class="link">Mansión Reggaetón</a></li>
-              <li class="list-item"><a href="#" class="link">Electrónica & Dance Music</a></li>
-              <li class="list-item"><a href="#" class="link">Pokemón Openings</a></li>
-              <li class="list-item"><a href="#" class="link">Marvel Playlist</a></li>
-              <li class="list-item"><a href="#" class="link">Guns N' Roses</a></li>
-              <li class="list-item"><a href="#" class="link">Audio Library</a></li>
+              <li class="list-item">
+                <span class="ellipsis">
+                  <a href="./dragon-ball-z.html" class="link">Dragon Ball Z Latino</a>
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="ellipsis">
+                  <a href="./rock-latino.html" class="link">50 Himnos Rock en Español</a>
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="ellipsis">
+                  <a href="./electronica.html" class="link">Electrónica & Dance Music</a>
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="ellipsis">
+                  <a href="./anime.html" class="link">Los mejores Opening de Audio Latino</a>
+                </span>
+              </li>
             </ul>
           </nav>
         </div>
@@ -99,18 +124,42 @@
           <div class="sticky">
             <div class="page-block">
               <header class="header" aria-label="Barra superior y menú del usuario">
-                <div class="navigation" aria-label="Botonera para anvanzar o regresar">
-                  <button class="navigation-prev" aria-label="Regresar" title="Regresar">
-                    <i class="icon-arrowLeft" aria-hidden="true"></i>
-                  </button>
-                  <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
-                    <i class="icon-arrowRight" aria-hidden="true"></i>
-                  </button>
+                <div class="header-left">
+                  <div class="navigation" aria-label="Botonera para anvanzar o regresar">
+                    <button class="navigation-prev" aria-label="Regresar" title="Regresar">
+                      <i class="icon-arrowLeft" aria-hidden="true"></i>
+                    </button>
+                    <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                      <i class="icon-arrowRight" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <form class="search" action="#" role="search" aria-label="Búsqueda por Artistas, canciones o podcasts">
+                    <i class="icon-search" aria-hidden="true"></i>
+                    <input id="search" type="search" placeholder="Artistas, canciones o podcasts">
+                  </form>
                 </div>
-                <form class="search" action="#" role="search" aria-label="Búsqueda por Artistas, canciones o podcasts">
-                  <i class="icon-search" aria-hidden="true"></i>
-                  <input id="search" type="search" placeholder="Artistas, canciones o podcasts">
-                </form>
+                <div class="header-right">
+                  <div class="user">
+                    <div class="user-login">
+                      <button class="userLogin" aria-label="Información de usuario" title="Información de usuario">
+                        <img class="userLogin-profilePhoto" src="./images/sebastian-reyes.png" alt="Foto de perfil Sebastián Reyes"
+                          height="28" width="28">
+                        <p class="userLogin-username">Sebastián Reyes</p>
+                        <div class="userLogin-icon">
+                          <i class="icon-arrowDown" aria-hidden="true"></i>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="user-menuDropdown">
+                      <nav aria-label="Menú mi cuenta" class="dropdown">
+                        <ul>
+                          <li class="dropdown-menuItem"><a href="#">Cuenta</a></li>
+                          <li class="dropdown-menuItem"><a href="./logout.html">Cerrar sesión</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
               </header>
             </div>
           </div>
@@ -154,12 +203,12 @@
                 </div>
                 <div class="playlistB">
                   <div class="playlistB-cover">
-                    <img src="./images/cover/portada-mansion-reggeaton.jpg" alt="Portada Anime Hits" height="76" width="76">
+                    <img src="./images/cover/daddy-yankee.jpg" alt="Portada Anime Hits" height="76" width="76">
                   </div>
                   <div class="playlistB-information">
-                    <h3 class="playlistB-title">Karol G</h3>
-                    <button class="buttonIcon is-primary " aria-label="Reproducir la lista de reproducción "
-                      title="Reproducir la lista de reproducción Karol G">
+                    <h3 class="playlistB-title">Daddy Yankee</h3>
+                    <button class="buttonIcon is-primary " aria-label="Reproducir la lista de reproducción Daddy Yankee "
+                      title="Reproducir la lista de reproducción Daddy Yankee">
                       <i class="icon-play" aria-hidden="true"></i>
                     </button>
                   </div>
@@ -401,6 +450,100 @@
               </div>
 
             </section>
+            <section class="playlistList" aria-labelledby="region4">
+              <div class="playlistList-top">
+                <h2 class="playlistList-title" id="region4">Solo Anime</h2>
+                <div class="navigation">
+                  <button class="navigation-prev" aria-label="Regresar" title="Regresar">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                  </button>
+                  <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="playlistList-container">
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/cover/caballeros-del-zoodiaco-cover.jpg" alt="Portada Caballeros del Zoodiaco" height="150"
+                      width="150">
+                    <button class="buttonIcon is-primary " aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Rolitas Caballeros del Zoodiaco</h3>
+                  <h4 class="playlistA-description">Rolitas tristes</h4>
+                </div>
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/cover/portada-pokemon-openings.jpg" alt="Portada Pokemón Openings" height="150"
+                      width="150">
+                    <button class="buttonIcon is-primary " aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Pokemón Openings</h3>
+                  <h4 class="playlistA-description">Los mejores Openings</h4>
+                </div>
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/cover/death-note-anime-cartel.jpg" alt="Portada Death Note" height="150"
+                      width="150">
+                    <button class="buttonIcon is-primary " aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Death Note</h3>
+                  <h4 class="playlistA-description">By Spotify</h4>
+                </div>
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/cover/portada-DBZ.jpg" alt="Portada Dragon Ball Z" height="150" width="150">
+                    <button class="buttonIcon is-primary " aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Dragon Ball Z Latino</h3>
+                  <h4 class="playlistA-description">Bruno Cirigliano</h4>
+                </div>
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/cover/inuyasha.jpg" alt="Portada Inuyasha" height="150"
+                      width="150">
+                    <button class="buttonIcon is-primary " aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Openings Inuyasha | audio latino</h3>
+                  <h4 class="playlistA-description">By Spotify</h4>
+                </div>
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/cover/siete-pecados-capitales.png" alt="Seven Deadly Sins Openings" height="150"
+                      width="150">
+                    <button class="buttonIcon is-primary " aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Seven Deadly Sins Openings</h3>
+                  <h4 class="playlistA-description">Mr Docean</h4>
+                </div>
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/cover/digimon.jpg" alt="Portada Digimon" height="150"
+                      width="150">
+                    <button class="buttonIcon is-primary " aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Openings Digimos</h3>
+                  <h4 class="playlistA-description">By Spotify | Audio latino</h4>
+                </div>
+
+
+              </div>
+
+            </section>
           </main>
         </div>
       </div>
@@ -474,7 +617,6 @@
           </div>
         </div>
       </footer>
-
     </div>
 
   </div>
