@@ -1,0 +1,34 @@
+.albumDetailsCoverB{
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.albumDetailsCoverB-img img{
+  vertical-align: middle;
+  inline-size: 14.5rem;
+  block-size: 14.5rem;
+  object-fit: cover;
+}
+
+.albumDetailsCoverB-details{
+  padding-inline-start: .62rem;
+  color: var(--white);
+  max-inline-size:51.25rem ;
+  min-inline-size: 20rem;
+
+}
+
+.albumDetailsCoverB-details p{
+  margin: 0;
+  font: var(--small);
+}
+
+.albumDetailsCoverB-details h1{
+  font:var(--headline1);
+}
+
+.albumDetailsCoverB-details p:first-of-type{
+  text-transform: uppercase;
+
+}

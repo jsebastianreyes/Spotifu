@@ -1,0 +1,44 @@
+.tableB{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  font: var(--small);
+}
+
+.tableB > *{
+   padding: .68rem;
+  flex-shrink: 0;
+}
+
+.tableB .nowPlaying-cover img{
+  object-fit: cover;
+}
+
+.tableB-rowNumber{
+ inline-size: 2.75rem;
+}
+
+.tableB-row{
+  inline-size: 13.5rem;
+}
+
+.tableB-rowTime{
+   inline-size: 3rem;
+}
+
+.titleTableB{
+  font: var(--small);
+  color:var(--white);
+}
+
+.tableB-rowNumber span{
+  color:var(--white);
+}
+
+.tableB-rowTime{
+   inline-size: 3rem;
+}
+
+.tableB-row .nowPlaying-title{
+  font: var(--small);
+}

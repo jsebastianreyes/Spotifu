@@ -1,6 +1,15 @@
 @import './playlist-list.css';
 @import './header.css';
 @import './sticky.css';
+@import './table.css';
+@import './tableB.css';
+@import './button-table.css';
+@import './filter.css';
+@import './album-details.css';
+@import './album-details-coverb.css';
+@import './searchListA.css';
+@import './searchlistList.css';
+
 
 .page{
   padding-inline-end: 2rem;
@@ -21,4 +30,18 @@
 
   margin-inline-end: -2rem;
   margin-inline-start: -2rem;
+}
+
+.is-background{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#mansion-reggaeton{
+  background-image:linear-gradient( rgba(47, 47, 47, 0) 0%, #171717 90.15%), url(../images/cover/bg-bad-bunny.jpg);
+}
+
+#electronica{
+  background-image:linear-gradient( rgba(47, 47, 47, 0) 0%, #171717 90.15%), url(../images/cover/sexy-dj-wallpaper-preview.jpg);
 }

@@ -1,0 +1,31 @@
+.dropdown{
+  background: var(--gray60);
+  inline-size: 11.25rem;
+  border-radius: .25rem;
+  padding: .25rem;
+  box-sizing: border-box;
+}
+
+
+.dropdown ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.dropdown-menuItem a{
+  color: var(--white);
+  font:var(--baseFont);
+  display: block;
+  block-size: 1.37rem;
+  transition: .3s background;
+  padding-inline-start: .5rem;
+  padding-inline-end: .5rem;
+  text-decoration: none;
+
+}
+
+.dropdown-menuItem a:hover{
+  background:var(--gray20);
+}

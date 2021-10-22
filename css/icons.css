@@ -10,13 +10,14 @@
 }
  */
 
+
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?k66z0i');
-  src:  url('../fonts/icomoon.eot?k66z0i#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?k66z0i') format('truetype'),
-    url('../fonts/icomoon.woff?k66z0i') format('woff'),
-    url('../fonts/icomoon.svg?k66z0i#icomoon') format('svg');
+  src:  url('.././fonts/icomoon.eot?4sda0r');
+  src:  url('.././fonts/icomoon.eot?4sda0r#iefix') format('embedded-opentype'),
+    url('.././fonts/icomoon.ttf?4sda0r') format('truetype'),
+    url('.././fonts/icomoon.woff?4sda0r') format('woff'),
+    url('.././fonts/icomoon.svg?4sda0r#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -99,6 +100,9 @@
 }
 .icon-searchActive:before {
   content: "\e914";
+}
+.icon-arrowDown:before {
+  content: "\e918";
 }
 .icon-volumeDown:before {
   content: "\e915";

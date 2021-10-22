@@ -1,0 +1,26 @@
+@import './user-login.css';
+@import './dropdown.css';
+
+.user{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.user-menuDropdown{
+  position: absolute;
+  top: 2.4rem;
+  opacity: 0;
+  transition: .3s opacity, .3s transform;
+  transform:translateY(-.5rem);
+  will-change: transform, opacity;
+
+}
+
+.user:hover .user-menuDropdown{
+  transform:translateY(0);
+  opacity: 1;
+}
+
+

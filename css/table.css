@@ -1,0 +1,62 @@
+@import './title-table.css';
+
+
+.table{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table > *{
+  padding: .68rem;
+  flex-shrink: 0;
+}
+
+.table-row{
+  color: var(--white);
+  inline-size: 13rem;
+
+}
+
+.table-rowButtonPlay{
+  inline-size: 2.75rem;
+  box-sizing: border-box;
+}
+
+.table-rowButtonLike{
+  inline-size: 2.37rem;
+  box-sizing: border-box;
+}
+
+
+
+.table-rowDate{
+  inline-size: 5rem;
+}
+
+.table-rowTime{
+ inline-size: 3rem;
+}
+
+.table-rowDate span, .table-rowTime span{
+  color: var(--gray10);
+}
+
+.table-content{
+  color: var(--white);
+}
+
+.titleTable{
+  font: var(--subtitle2);
+  color: var(--gray10);
+  text-transform: uppercase;
+}
+
+.table-icon{
+  color: var(--gray10);
+  font-size: 1.12rem;
+}
+
+
+
+

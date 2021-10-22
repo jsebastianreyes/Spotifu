@@ -1,5 +1,7 @@
 @import './search.css';
 @import './navigation.css';
+@import './button-logout.css';
+@import './user.css';
 
 .header{
   display: flex;
@@ -10,11 +12,17 @@
   padding-inline-start: 1.5rem;
   padding-inline-end: 1.5rem;
   backdrop-filter: blur(4px);
+  /*temporal*/
+  justify-content: space-between;
 
 }
 
-
-
+.header-left{
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  align-items: center;
+}
 
 @supports not ( backdrop-filter: blur(1px)){
   .header{

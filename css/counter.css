@@ -1,0 +1,10 @@
+.counter:before{
+  content: counter(number);
+  counter-increment:number;
+
+}
+
+body {
+  counter-reset: number;
+
+}

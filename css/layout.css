@@ -21,16 +21,28 @@
   inline-size: var(--sidebarInlineSize);
   overflow: auto;
   flex-shrink: 0;
-  min-block-size: var(--minBlockSize);
+  /* min-block-size: var(--minBlockSize); */
+  background: var(--gray60);
 }
 
 .layout-main{
   block-size: calc(100vh - var(--bottomSize));
   overflow: auto;
-   min-block-size: var(--minBlockSize);
+  /* min-block-size: var(--minBlockSize); */
+  flex: 1;
 }
 
 .layout-bottom{
   flex: 1;
   block-size: var(--bottomSize);
 }
+
+.is-hidden{
+  opacity: 0;
+}
+
+.tablePlaylist, .tablePlayListB{
+  overflow-x: auto;
+}
+
+

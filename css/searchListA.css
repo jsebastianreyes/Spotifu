@@ -1,0 +1,88 @@
+.searchListA{
+  padding: 1rem;
+  border-radius: .25rem;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  border:none;
+  cursor: pointer;
+
+  flex-shrink: 0;
+}
+
+
+.searchListA-title{
+  color: var(--white);
+  margin: 0;
+}
+
+.searchListA-img{
+  object-fit: cover;
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(
+  25deg) translate(18%,-2%);
+  box-shadow:0 2px 4px 0 rgb(0 0 0 / 20%);
+}
+
+.is-yellow{
+  background-color: yellowgreen;
+}
+
+.is-orange{
+  background-color: rgb(225, 51, 0);
+}
+
+.is-purple{
+  background:rgb(141, 103, 171);
+}
+
+.is-redLight{
+  background-color: rgb(255, 100, 55);
+
+}
+
+.is-papaya{
+  background-color: paleturquoise;
+}
+
+.is-pink{
+  background-color: palevioletred;
+}
+
+.is-green{
+background-color: greenyellow;
+}
+
+.is-blue{
+  background-color: blueviolet;
+}
+
+.is-cardBig{
+  inline-size: 25.6rem;
+  block-size: 13.75rem;
+}
+
+.is-cardSmall{
+   inline-size: 12rem ;
+   block-size: 12rem;
+}
+
+.is-fontBig{
+  font: var(--headline1);
+}
+
+.is-fontSmall{
+  font: var(--headline2);
+}
+
+.is-imgBig{
+  inline-size: 8rem;
+  block-size: 8rem;
+}
+.is-imgSmall{
+  inline-size: 6.25rem;
+  block-size: 6.25rem;
+}
