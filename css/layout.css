@@ -1,40 +1,33 @@
 :root{
   --sidebarInlineSize: 15rem;
-  --minBlockSize: 37.5rem;
   --minInlineSize: 48rem;
   --bottomSize:  5.5rem;
 
 }
 
 .layout{
-  /* box-shadow: inset 0 0 0 10px yellowgreen; */
+  block-size: 100vh;
   min-inline-size: var(--minInlineSize);
+  display: grid;
+  grid-template-columns: var(--sidebarInlineSize) 1fr;
+  grid-template-rows: 1fr var(--bottomSize);
+  grid-template-areas:
+  "sidebar main"
+  "play play";
 
 }
 
-.layout-block{
-  display: flex;
-}
-
-.layout-sidebar{
-  block-size: calc(100vh - var(--bottomSize));
-  inline-size: var(--sidebarInlineSize);
-  overflow: auto;
-  flex-shrink: 0;
-  /* min-block-size: var(--minBlockSize); */
+.layout .sidebar{
   background: var(--gray60);
+  grid-area: sidebar;
 }
 
-.layout-main{
-  block-size: calc(100vh - var(--bottomSize));
-  overflow: auto;
-  /* min-block-size: var(--minBlockSize); */
-  flex: 1;
+.layout .page{
+  grid-area: main;
 }
 
-.layout-bottom{
-  flex: 1;
-  block-size: var(--bottomSize);
+.layout footer{
+  grid-area: play;
 }
 
 .is-hidden{
